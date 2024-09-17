@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق الأفلام</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- الهيدر وشريط البحث -->
+    <header>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="ابحث عن فيلم..." onkeyup="searchMovies()" />
+            <button onclick="searchMovies()">بحث</button>
+        </div>
+        <div class="header-image">
+            <img src="main-movie.jpg" alt="Main Movie">
+        </div>
+        <div class="movie-info">
+            <h2>The Golden Compass</h2>
+            <span>عائلي • دراما</span>
+        </div>
+        <button class="start-watching-btn">إبدأ المشاهدة</button>
+    </header>
+
+    <!-- قائمة الأفلام -->
+    <section class="movie-list" id="movieList">
+        <div class="movie">
+            <img src="movie1.jpg" alt="Movie 1">
+            <p>فيلم 1</p>
+        </div>
+        <div class="movie">
+            <img src="movie2.jpg" alt="Movie 2">
+            <p>فيلم 2</p>
+        </div>
+        <div class="movie">
+            <img src="movie3.jpg" alt="Movie 3">
+            <p>فيلم 3</p>
+        </div>
+        <div class="movie">
+            <img src="movie4.jpg" alt="Movie 4">
+            <p>فيلم 4</p>
+        </div>
+        <!-- أضف المزيد من الأفلام حسب الحاجة -->
+    </section>
+
+    <!-- القائمة السفلية -->
+    <nav class="bottom-nav">
+        <div class="nav-item">
+            <img src="home-icon.png" alt="Home">
+            <p>الرئيسية</p>
+        </div>
+        <div class="nav-item">
+            <img src="search-icon.png" alt="Search">
+            <p>البحث</p>
+        </div>
+        <div class="nav-item">
+            <img src="profile-icon.png" alt="Profile">
+            <p>البروفايل</p>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
